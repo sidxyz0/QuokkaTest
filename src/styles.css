@@ -1,1 +1,116 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import '~ngx-toastr/toastr';
+:root{
+    --cardShadow: 0px 5px 10px 3px #d3d3d3;
+    --primaryColor: #673ab7;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.white-text{
+    color:white
+}
+.pageTitle{
+    font-weight: bolder;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headingText25{
+    font-weight: bolder;
+    font-size: 25px;
+}
+.headingText20{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.normalText{
+    font-weight: lighter;
+    font-size: 16px;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.topCenter_sideCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topStart_sidesb{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.topStart_sideStart{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.scrollAuto{
+    overflow: auto;
+}
+
+.mt50{
+    margin-top: 50px;
+}
+
+.pt50{
+    padding-top: 50px;
+}
+
+.w70vw{
+    width: 70vw;
+}
+
+.h100vh{
+    height: 100vh;
+}
+
+.w100w_h100h{
+    width: 100vw;
+    height: 100vh;
+}
+
+.maxw4_maxh7 {
+    max-width: 400px;
+    max-height: 700px;
+}
+
+.minw1_minh3 {
+    min-width: 100px;
+    min-height: 300px;
+}
+
+.mat-card{
+    box-shadow: var(--cardShadow) !important;
+    margin: 20px;
+}
+
+.mat-card>.mat-card-actions:last-child {
+    margin-bottom: -4px !important;
+}
+
+.mat-form-field{
+    width: 100%;
+}
+.fullBtn{
+    width: 100%;
+}
+
+.m0-5{
+    margin: 5px 0px;
+}
+
+.mb15{
+    margin-bottom: 15px;
+}
+.mb0{
+    margin-bottom: 0px;
+}

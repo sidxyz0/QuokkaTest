@@ -1,0 +1,33 @@
+<div class="topCenter_sideCenter w100w_h100h .mt50">
+    <div class="maxw4_maxh7 minw1_minh3">
+        <mat-card class="mat-card">
+            <mat-card-header class="mb15">
+                <mat-card-title class="headingText25">SignIn</mat-card-title>
+                <mat-card-subtitle>Welcome to Quokka, Please enter your email and password to sign in.</mat-card-subtitle>
+            </mat-card-header>
+           
+            <mat-card-content class="mb0">
+                <form [formGroup]="loginForm">
+                    <mat-form-field appearance="fill" class="m0-5">
+                      <mat-label for="email">Email</mat-label>
+                      <input formControlName="email" id="email" type="email" matInput placeholder="Ex. shubham@gmail.com">
+                      <mat-error *ngIf="loginForm.controls['email'].invalid && loginForm.controls['email'].touched">
+                        Please enter a valid email address
+                      </mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill" class="m0-5">
+                        <mat-label for="password">Password</mat-label>
+                        <input formControlName="password" id="password" type="password" matInput placeholder="xxxxxxxxx">
+                        <mat-error *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].touched">
+                          Please enter a valid password
+                        </mat-error>
+                      </mat-form-field>
+                  </form>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button mat-raised-button color="primary" class="fullBtn"
+                (click)="login()">SignIn</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
